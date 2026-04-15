@@ -2,21 +2,133 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>盖盖生日快乐</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人生新岁·全新启航</title>
 <style>
-body{background:#ffeff5;text-align:center;padding:50px 20px;font-family:Microsoft YaHei}
-.main{max-width:400px;margin:0 auto;background:white;padding:30px;border-radius:16px;box-shadow:0 0 20px #00000010}
-h1{color:#ff5e93}
-.text{font-size:18px;line-height:1.8;margin:15px 0}
-.btn{background:#ff5e93;color:white;padding:12px 25px;border-radius:30px;border:none;font-size:16px;margin-top:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    background:linear-gradient(135deg,#1f2a37,#2d3748,#37475a);
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+    line-height:1.8
+}
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    animation:starTwinkle 3s infinite alternate
+}
+@keyframes starTwinkle{0%{opacity:0.2}100%{opacity:1}}
+.container{
+    max-width:800px;
+    margin:0 auto;
+    padding:60px 20px;
+    position:relative;
+    z-index:1
+}
+.title{
+    font-size:36px;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:40px;
+    color:#f9fafb;
+    text-shadow:0 0 15px rgba(255,255,255,0.3)
+}
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:50px 40px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.3)
+}
+.article p{
+    font-size:17px;
+    color:#e5e7eb;
+    margin-bottom:22px;
+    text-align:justify
+}
+.signature{
+    text-align:right;
+    margin-top:40px;
+    font-size:16px;
+    color:#fbbf24;
+    font-weight:bold;
+}
+.wish{
+    text-align:center;
+    margin-top:20px;
+    font-size:18px;
+    color:#fcd34d;
+    font-weight:bold;
+}
+.btn-box{
+    text-align:center;
+    margin-top:50px
+}
+.btn{
+    display:inline-block;
+    padding:14px 36px;
+    background:linear-gradient(90deg,#3b82f6,#60a5fa);
+    color:#fff;
+    font-size:16px;
+    border-radius:50px;
+    text-decoration:none;
+    box-shadow:0 6px 20px rgba(59,130,246,0.3);
+    transition:all 0.3s;
+    border:none;
+    cursor:pointer
+}
+.btn:hover{transform:translateY(-3px)}
 </style>
 </head>
 <body>
-<div class="main">
-<h1>🎉 盖盖生日快乐 🎉</h1>
-<div class="text">祝你天天开心，永远被爱包围</div>
-<div class="text">愿所有美好都如约而至✨</div>
-<button class="btn" onclick="alert('祝福已签收！')">点击接收祝福</button>
+
+<div class="container">
+    <h1 class="title">✨ 盖盖 · 人生新岁篇章 · 现已全面启动 ✨</h1>
+    <div class="card article">
+        <p>盖盖，人生新岁篇章，现已全面启动并进入高质量发展阶段。</p>
+        <p>在过往岁月的沉淀与成长的迭代升级中，我们历经风雨磨砺，积攒阅历厚度，完成心智与格局的双重蜕变。告别旧日的迷茫与犹豫，摒弃无谓的内耗与纠结，以更从容的心态，更坚定的步伐，迎接全新阶段的机遇与挑战。</p>
+        <p>这绝非简单意义上的年龄递增，而是个人状态的战略性升级，是阅历丰盈、底气沉淀、格局开阔的重要里程碑。</p>
+        <p>不必追赶世俗定义的成功，不必迎合他人眼中的标准。在属于自己的节奏里稳步前行，在热爱的生活中自在舒展。允许一切发生，接纳所有经历，把过往的遗憾化作前行的动力，把积攒的温柔变成对抗世界的勇气。</p>
+        <p>愿此后，心有山海而不惧路长，眼有星辰而始终明亮，三餐四季安稳顺遂，岁岁年年自在无忧。</p>
+        <p>以更丰盈的内心，更舒展的姿态，更厚重的底气，奔赴下一程更广阔的山海，活成自己最喜欢的模样。</p>
+        <p>值此盖盖的成长节点，谨以奋斗姿态，向过往致敬，向未来报道。生日是生命年轮的一次刻度，更是个人理想融入时代洪流的再出发。愿以健康中国为基，以高质量发展为帆，在全面推进中国式现代化的征程上，继续书写与国家同频共振的人生注脚，同心筑梦，共赴山海。</p>
+
+        <div class="signature">
+            浩天<br>
+            公历2026年4月16日<br>
+            敬上 · 新岁启航
+        </div>
+
+        <div class="wish">
+            岁岁常欢愉 万事皆胜意
+        </div>
+    </div>
+
+    <div class="btn-box">
+        <button class="btn" onclick="alert('盖盖，生日快乐！新岁启航·未来可期✨')">开启新程</button>
+    </div>
 </div>
+
+<script>
+function createStars(){
+    const body=document.body;
+    for(let i=0;i<150;i++){
+        const star=document.createElement('div');
+        star.classList.add('star');
+        star.style.left=Math.random()*100+'%';
+        star.style.top=Math.random()*100+'%';
+        star.style.animationDelay=Math.random()*3+'s';
+        body.appendChild(star);
+    }
+}
+createStars();
+</script>
 </body>
 </html>
